@@ -1,0 +1,6 @@
+============================== Day 1 ==============================
+Lab-1: Introduction
+Lab-2: Variable Inference / Duck typing 
+Lab-3: Data types
+Lab-4: Hoisting
+Lab-5: How to use Debugger in DevTools

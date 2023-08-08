@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var x = {
+        //     name: "yogesh"
+        // };
+        // var y = x;
+        // y.name=20;
+        // alert(x.name);
+        // var fun = function(){
+        //     alert("hello");
+        // } 
+        // var fun2=fun;
+        // fun2();
+
+        function Fun1(val){
+            var str = val; //access private variable
+            var _getData = function(){//private
+                return str;//enclose
+            }
+            return {
+                getData:_getData  //public
+            };
+        }
+        var t = Fun1("y");//
+        alert(t.getData());
+    </script>
+</body>
+</html>
