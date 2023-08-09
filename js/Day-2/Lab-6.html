@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Scopes:
+        //1.Global Scope
+        //2.Block Scope/ Private Scope
+
+        var x = 10; // has Global Scope
+
+
+        //-------------------------------
+        // function fun1() {
+        //     var y = 100; //has private scope/ function scope
+        //     alert(x);
+        // }
+        // fun1();
+        // alert(y);   //'y' is not in scope hence will throw an error
+        //-------------------------------
+
+
+
+        //-------------------------------
+        // {
+        //     var y = 100; //will have a Global scope bcz scoping does's work with non function blocks {}
+        //     alert(x);
+        // }
+        // alert(y); // will display 100
+        //---------------------------------
+
+
+
+        //----------------------------------
+        // js -> 1997
+        // versions -> ES1,ES2,...,ES(n)
+        // ECMA (Standard followd by JS) -> version
+        // should use ES6 -> properly supported by browsers -> introduced classes
+                            // -> added 'let' key-word
+        //-----------------------------------
+
+
+
+        
+        //---------------Use of 'let'--------------
+        //will create (TDZ) 'Temporal Dead Zone'
+        //solves following problems:
+        //1. will not allow Hoisting of that variable
+        //2. provides a strict block Scope
+        {
+            let y = 100; // will have a block scope (strict)
+            alert(x);
+        }
+        alert(y); // will throw an error bcz 'y' is not in scope   
+
+    </script>
+</body>
+
+</html>

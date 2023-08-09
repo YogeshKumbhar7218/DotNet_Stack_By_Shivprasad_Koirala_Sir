@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Synchronus calls vs Asynchronus calls
+        //Java script is acync but not multi Threaded (uses context switching)
+        //js is Single Threaded (can run single task at a time)
+
+        //------------------------synchronus
+        // alert("hello");          //(1)
+        // console.log("hi");       //(2)
+        //------------------------
+
+        //------------------------aSynchronus
+        // setTimeout(() => {
+        //     alert("hello");      //(2)
+        // }, 0);                   
+        // console.log("hi");       //(1)
+        //------------------------
+
+        //prallel -> multithreaded -> multiple cpu
+        //concurrent -> singlethread -> single cpu(uses time slicing) 
+
+        //------------------------------------
+        //Main stack(sync code goes in) | Secondary Stack(async code goes in)
+
+        console.log("Hi 1");    // Main stack (1)
+        setTimeout(() => {
+            console.log("Hi 2");// Secondary Stack (3)
+        }, 0);
+        console.log("Hi 3");    // Main stack (2)
+        //-------------------------------------
+    </script>
+</body>
+
+</html>

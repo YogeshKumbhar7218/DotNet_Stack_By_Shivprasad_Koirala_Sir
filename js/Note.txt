@@ -1,6 +1,10 @@
 ============================== Day 1 ==============================
 Lab-1: Introduction
 Lab-2: Variable Inference / Duck typing 
-Lab-3: Data types
+Lab-3: Basic Data types
 Lab-4: Hoisting
 Lab-5: How to use Debugger in DevTools
+============================== Day 2 ==============================
+Lab-6: Scopes var/let
+Lab-7: Synchronus/Asynchronus,setTimeout
+Lab-8: Promise

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Promise: used to make async calls, it tell's if the task is a success or it's a failure
+        console.log("log1");                                    //(1)
+
+        var ans = new Promise(function (res, rej) {
+            let apiCall = true; //success(true)/failuar(false)
+            if (apiCall) {
+                return res();
+            } else {
+                return rej();
+            }
+        });
+        ans.then(function () {
+            console.log("successful api Call!(log2)"); // will get executed when api call is successful  //(3)
+        }).catch(function () {
+            console.log("Failure in api call(log2)"); // will get executed if failure in api call
+        });
+
+        console.log("log3");                                   //(2)
+    </script>
+</body>
+
+</html>
