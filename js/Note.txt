@@ -8,3 +8,8 @@ Lab-5: How to use Debugger in DevTools
 Lab-6: Scopes var/let
 Lab-7: Synchronus/Asynchronus,setTimeout
 Lab-8: Promise
+============================== Day 3 ==============================
+Lab-9:  Objects Literal/Constructor
+Lab-10: Closures/stateful functions
+Lab-11: IIFE:Immediately Invoked Function Expression
+Lab-12: Revealing Module Pattern
