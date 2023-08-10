@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //IIFE:Immediately Invoked Function Expression
+        //If we want to invoke a function only once
+
+        //regular/general way : will not work
+        function Init() {
+
+        }
+        Init();// we can call Init() multiple time
+        Init();
+
+        //IIFE way : will work
+        (function () {
+            console.log("function invoked")
+        })();
+
+    </script>
+</body>
+
+</html>

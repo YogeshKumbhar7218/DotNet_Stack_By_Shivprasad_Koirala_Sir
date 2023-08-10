@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //State full functions/closures  --> function inside function
+
+
+        //1. Stateless function
+        function Student(stuName) { // dont preserve state of the function
+            name = stuName;
+            return name;
+        }
+        console.log(Student("yogesh")); //stack after this call will be flushed
+        console.log(Student()); // will not print the previous name
+        console.log(Student());
+
+
+        //2. Statefull function
+        function Student2(stuName) {
+            name = stuName;
+            function getName() { // will preserve the state of the name variable
+                return name;
+            }
+            return getName; // will allow us to access getNam() outside this function
+        }
+        var ref = Student2("yogesh");
+        console.log(ref());//all these calls will display same name
+        console.log(ref());
+        console.log(ref());
+    </script>
+</body>
+
+</html>

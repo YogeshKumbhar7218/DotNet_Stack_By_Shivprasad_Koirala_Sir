@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Revealing Module Pattern
+        //Closure + IIFE = Revealing Module Pattern
+        //It gives you power to create public/private variables/methods (using closure),
+        //and avoids polluting global scope;
+
+        var myRevealingModule = function () {
+
+            var privateCounter = 0;
+
+            function privateFunction() {        //private
+                privateCounter++;
+            }
+            function publicIncrement() {        //public
+                privateFunction();
+            }
+            function publicGetCount() {         //public
+                return privateCounter;
+            }
+
+            //Reveal public pointers to private functions and properties        
+
+            return {                                              //Closure
+                publicIncrement,
+                publicGetCount
+            };
+
+        }();                                                     //IIFE
+
+        console.log(myRevealingModule.publicGetCount());
+        myRevealingModule.publicIncrement();
+        console.log(myRevealingModule.publicGetCount());
+        myRevealingModule.privateFunction();                //will throw an error bcz it's private
+
+
+    </script>
+</body>
+
+</html>

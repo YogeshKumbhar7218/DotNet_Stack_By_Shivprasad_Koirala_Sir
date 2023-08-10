@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Objects
+        //1. Literal Objects 
+        //2. Constructor Objects
+
+        var stud = {};  //Literal Object
+        stud.name = "yogesh";
+        stud.rollNo = 56;
+        stud.introduce = function () {
+            return `Hi, my self ${stud.name}`;
+        }
+        console.log(stud);
+        console.log(stud.introduce());
+
+
+        function Student(name) {
+            this.name = name;
+            this.introduce = function () {
+                console.log(`Hi, my self ${this.name}`);
+            }
+        }
+        var s = new Student("yogesh"); //constructor Object
+        s.introduce();
+    </script>
+</body>
+
+</html>
