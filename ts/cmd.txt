@@ -1,0 +1,12 @@
+type script --> java scripts with syntax for types
+          --> is a strogly typed programming language
+          --> it transpiles to java script 
+
+installation
+$npm install typescript                 // locally
+$npm install typescript  -g             // globally
+$npm --init                             // to get tsconfig.json   
+$tsc -v                                 // check version
+$tsc fileName.ts                        // transpile to js will ignore tsconfig.json file
+$tsc                                    // will not ignore the tsconfig.json file
+

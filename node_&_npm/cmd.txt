@@ -1,0 +1,14 @@
+node -> npm -> tsc -> Angular
+
+node -> javaScript runtime -> has a js engine(v8 engine) -> also used by chrome browser
+     -> compiles js to direct machine code
+
+$node fileName.js       // to run the js with node
+
+
+npm -> its a package manager -> helps to manage dependencies 
+$npm init       --> to get a package.json file 
+
+$npm install packageName        //to install/download a package
+package.json -> keeps track of dependencies -> next time no need to install packages one by one
+$npm install    --> will install all the packages listed inside package.json 
