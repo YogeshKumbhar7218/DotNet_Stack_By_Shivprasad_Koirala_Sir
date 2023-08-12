@@ -1,0 +1,4 @@
+$npm install @angular/cli
+$ng new ProjectName
+$ng serve 
+

@@ -1,0 +1,7 @@
+============================== Day 5 ==============================
+-Angular Intro
+-angular cli
+-project structure
+-start up sequence
+-modules, components
+-angular directives
