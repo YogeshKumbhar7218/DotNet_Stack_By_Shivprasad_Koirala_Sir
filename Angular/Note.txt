@@ -5,3 +5,5 @@
 -start up sequence
 -modules, components
 -angular directives
+============================== Day 6 ==============================
+-HW
