@@ -2,8 +2,10 @@
 -Angular Intro
 -angular cli
 -project structure
--start up sequence
+-startup sequence
 -modules, components
 -angular directives
 ============================== Day 6 ==============================
 -HW
+============================== Day 7 ==============================
+-Angular Routing
