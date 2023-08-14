@@ -1,0 +1,26 @@
+Name: <input type="text" [(ngModel)]="PatObj.name"><br><br>
+code: <input type="text" [(ngModel)]="PatObj.code"><br><br>
+Age: <input type="text" [(ngModel)]="PatObj.age"><br><br>
+Address1: <input type="text" [(ngModel)]="PatObj.address1"><br><br>
+
+<input type="button" value="Add" (click)="Add()"> <input type="button" value="Save" (click)="Save()">
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Code</td>
+        <td>Address</td>
+        <td>Edit</td>
+        <td>Delete</td>
+    </tr>
+    <tr *ngFor="let temp of patObjs">
+        <td>{{temp.name}}</td>
+        <td>{{temp.age}}</td>
+        <td>{{temp.code}}</td>
+        <td>{{temp.address1}}</td>
+        <td><input type="button" value="Edit" (click)="Edit(temp)"></td>
+        <td><input type="button" value="Delete" (click)="Delete(temp)"></td>    
+    </tr>
+</table>
+
+
